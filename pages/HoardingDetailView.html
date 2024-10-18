@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"/>
+    <link href="../assets/vendor/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.10.1/dist/css/bootstrap-datepicker3.min.css">
+
+    <link href="../assets/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/datatables.min.css"rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fullcalendar.io/css/base.css?3.4.0-1.6.2-3" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>CMC</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="h-100">
+          <div class="sidebar-logo ">
+            <a href="#" class="d-flex align-items-center justify-content-between">
+                <img src="../assets/images/cmc-logo.png" alt="">
+                <div class="logo-heading">
+                    <h6>Baliapal Municipality</h6>
+                    <span>E-Municipality</span>
+                </div>
+            </a>
+        </div>
+          <!-- Sidebar Navigation -->
+          <ul class="sidebar-nav">
+            
+          
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#pages"
+                aria-expanded="false"
+                aria-controls="pages"
+              >
+                <i class="fa-regular fa-file-lines pe-2"></i>
+                Hoarding Management System
+              </a>
+              <ul
+                id="pages"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="hoardinginventorylist.html" class="sidebar-link">Hoarding Inventory List </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="HoardingDetailView.html" class="sidebar-link">Hoarding Detail View</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="CampaignManagement .html" class="sidebar-link">Campaign Management</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="Bookings&Reservations.html" class="sidebar-link">Bookings & Reservations</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="ClientManagement .html" class="sidebar-link"> Client Management </a>
+                </li>
+                
+
+              </ul>
+          
+        </div>
+      </aside>
+      <!-- Main Component -->
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <!-- Button for sidebar toggle -->
+          <button class="btn sidebarBtn" type="button" data-bs-theme="dark">
+            <span class="fa-solid fa-bars"></span>
+          </button>
+          <h4 class="page-title">Dashboard</h4>
+          <ul class="riteside">
+            <li>
+              <select name="" id="">
+                <option value="">--Select Role--</option>
+                <option value="">Admin</option>
+                <option value="">User</option>
+              </select>
+            </li>
+            <li>
+              <i class="fa fa-bell"></i>
+            </li>
+            <li class="dropdown">
+              <img src="/assets/img/user1.png" alt="" />
+              <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                <p>Mr. Sujan</p>
+                <span>Admin</span>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="hoarding mt-3">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                      <h5 class="mb-0">  Hoarding Detail View </h5>  
+                    </div>
+                    <div class="card-body">
+                     
+                <div class="h_fig">
+                  <img src="../assets/images/hoarding.jpg" />
+                </div>
+                <div class="details">
+                  <div class="label">
+  
+                    <label class="d-inline" >Size and dimensions:</label>
+                    <!-- <input type="text" > -->
+                     <span class="d-inline">500ft X 500ft</span>
+                </div>
+                <div class="label">
+  
+                  <label class="d-inline">Pricing information:</label>
+                  <!-- <input type="text" > -->
+                   <span class="d-inline">Rs. 5000/- per week</span>
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                
+              <div class="col-md-5 ">
+                <div class="h_map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29935.990568479156!2d85.77814951082206!3d20.300315933470607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909c55970eb61%3A0x81f12808cc25b847!2sJayadev%20Vihar%2C%20Bhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1728386499963!5m2!1sen!2sin"
+                    
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+             
+              </div>
+              <div class="col-md-7">
+                <div class="h_mapcon">
+                    
+                  <div class="cal">
+
+                    <div id="calendar"></div>
+                  </div>
+                  
+
+
+
+                </div>
+
+                  </div>
+                  </div>
+                    </div>
+                    </div>
+                </div>
+              
+
+            <div class="card  mt-3">
+              <div class="card-header">
+                <h5 class="mb-0">  Maintenance history </h5>  
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="table-responsive">
+                    <table class="table table-bordered mt-2" style="background: #fffc;">
+                      <thead>
+                        <tr>
+                          <th style="min-width:150px;">Last Maintenance Done </th>
+                          <th style="min-width:150px;">Maintained By </th>
+                          <th style="min-width:150px;">Next Maintenance Due </th>
+                          <th style="min-width:150px;">Last Maintenance Remarks.</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input type="date" class="form-control" value="2024-01-01" disabled>
+                          </td>
+                          
+                          <td style="padding-top:20px ;">
+                            <select class="form-control form-control-sm" disabled>
+                              <option>Prashant</option>
+                             
+                            </select>
+                          </td>
+                        
+                          <td>
+                            <input type="date" class="form-control" value="2024-02-08" disabled>
+                          </td>
+                          <td>
+                            <input style="min-width:150px;" type="text" class="form-control" placeholder="Enter Maintenance Remarks" disabled>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> 
+                </div>
+            </div>
+
+            </div>
+            <div class="card mt-3">
+              <div class="card-header">
+                <h5 class="mb-0">Nearby competing hoardings:</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Barabati</h5>
+                        <p class="card-text">Size : 5ft X 5ft</p>
+                        <p class="card-text">price : 50000</p>
+                        <a href="#" class="btn btn-primary mt-3">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">CDA Sector 2</h5>
+                        <p class="card-text">Size : 5ft X 5ft</p>
+                        <p class="card-text">price : 50000</p>
+                        <a href="#" class="btn btn-primary mt-3">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Badambadi</h5>
+                        <p class="card-text">Size : 5ft X 5ft</p>
+                        <p class="card-text">price : 50000</p>
+                        <a href="#" class="btn btn-primary mt-3">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Judicial Academy</h5>
+                        <p class="card-text">Size : 5ft X 5ft</p>
+                        <p class="card-text">price : 50000</p>
+                        <a href="#" class="btn btn-primary mt-3">Book Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/amcharts4/core.js"></script>
+    <script src="../assets/amcharts4/charts.js"></script>
+    <script src="../assets/amcharts4/themes/animated.js"></script>
+    <script src="../assets/charts/tabASSession_chart.js"></script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js">
+    </script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js">
+    </script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/locale-all.js">
+    </script>
+    <script
+      src="https://kit.fontawesome.com/ae360af17e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+   <script>
+    $(document).ready(function() {
+
+$('#calendar').fullCalendar({
+  //locale: 'zh-cn',
+  header: {
+    left: 'prev,next today',
+    center: 'title',
+    right: 'month,basicWeek,basicDay'
+  },
+  defaultDate: '2024-10-10',
+  navLinks: true, // can click day/week names to navigate views
+  editable: true,
+  eventLimit: true, // allow "more" link when too many events
+  events: [
+    {
+      title: 'Available/Free',
+      start: '2024-10-10'
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-15',
+    },
+    {
+      id: 999,
+      title: 'Available/Free',
+      start: '2024-10-17T16:00:00'
+    },
+    {
+      id: 999,
+      title: 'Available/Free',
+      start: '2024-10-18T16:00:00'
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-20',
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-21T10:30:00',
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-12T12:00:00'
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-12T14:30:00'
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-12T17:30:00'
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-10-12T20:00:00'
+    },
+    {
+      title: 'Available/Free',
+      start: '2024-12-13T07:00:00'
+    },
+    {
+      title: 'Click for Google',
+      url: 'http://google.com/',
+      start: '2024-10-28'
+    }
+  ]
+});
+
+});
+   </script>
+
+
+  </body>
+</html>

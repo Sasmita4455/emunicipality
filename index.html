@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/datatables.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>CMC</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="h-100">
+              <div class="sidebar-logo ">
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                    <img src="../assets/images/cmc-logo.png" alt="">
+                    <div class="logo-heading">
+                        <h6>Baliapal Municipality</h6>
+                        <span>E-Municipality</span>
+                    </div>
+                </a>
+            </div>
+              <!-- Sidebar Navigation -->
+              <ul class="sidebar-nav">
+                
+              
+                <li class="sidebar-item">
+                  <a
+                    href="#"
+                    class="sidebar-link collapsed"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#pages"
+                    aria-expanded="false"
+                    aria-controls="pages"
+                  >
+                    <i class="fa-regular fa-file-lines pe-2"></i>
+                    Hoarding Management System
+                  </a>
+                  <ul
+                    id="pages"
+                    class="sidebar-dropdown list-unstyled collapse"
+                    data-bs-parent="#sidebar"
+                  >
+                    <li class="sidebar-item">
+                      <a href="hoardinginventorylist.html" class="sidebar-link">Hoarding Inventory List </a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="HoardingDetailView.html" class="sidebar-link">Hoarding Detail View</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="CampaignManagement .html" class="sidebar-link">Campaign Management</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="Bookings&Reservations.html" class="sidebar-link">Bookings & Reservations</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="ClientManagement .html" class="sidebar-link"> Client Management </a>
+                    </li>
+                    
+    
+                  </ul>
+              
+            </div>
+          </aside>
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn sidebarBtn" type="button" data-bs-theme="dark">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+                <h4 class="page-title">Dashboard</h4>
+                <ul class="riteside">
+                    <li>
+                        <select name="" id="">
+                            <option value="">--Select Role--</option>
+                            <option value="">Admin</option>
+                            <option value="">User</option>
+                        </select>
+                    </li>
+                    <li>
+                        <i class="fa fa-bell"></i>
+                    </li>
+                    <li class="dropdown">
+                        <img src="/assets/img/user1.png" alt="">
+                        <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                            <p>Mr. Sujan</p>
+                            <span>Admin</span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <main class="content py-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3">
+                            <div class="dashCard">
+                                <div class="card-top">
+                                    <i class="fa fa-home"></i>
+                                    <h4>3300 <span>Items</span></h4>
+                                </div>
+                                <div class="card-bot">
+                                    <a href="#">View All <i class="fa fa-arrow-right"></i></a>
+                                    <p>
+                                        <span class="plus inc">+40%</span>
+                                        <span>this Month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="dashCard">
+                                <div class="card-top">
+                                    <i class="fa fa-home"></i>
+                                    <h4>3300 <span>Items</span></h4>
+                                </div>
+                                <div class="card-bot">
+                                    <a href="#">View All <i class="fa fa-arrow-right"></i></a>
+                                    <p>
+                                        <span class="plus inc">+40%</span>
+                                        <span>this Month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="dashCard">
+                                <div class="card-top">
+                                    <i class="fa fa-home"></i>
+                                    <h4>3300 <span>Items</span></h4>
+                                </div>
+                                <div class="card-bot">
+                                    <a href="#">View All <i class="fa fa-arrow-right"></i></a>
+                                    <p>
+                                        <span class="plus inc">+40%</span>
+                                        <span>this Month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="dashCard barbati">
+                                <div class="card-top">
+                                    <i class="fa fa-home"></i>
+                                    <h4>3300 <span>Items</span></h4>
+                                </div>
+                                <div class="card-bot">
+                                    <a href="#">View All <i class="fa fa-arrow-right"></i></a>
+                                    <p>
+                                        <span class="plus inc">+40%</span>
+                                        <span>this Month</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-8 mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Header</h4>
+                                    <div id="tabASSession_chart" style="height: 350px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mt-3">
+                            <div class="card bg-info">
+                                <div class="card-body">
+                                    <h4 class="card-title">Header</h4>
+                                    <div id="" style="height: 350px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+    <script src="assets/amcharts4/core.js"></script>
+    <script src="assets/amcharts4/charts.js"></script>
+    <script src="assets/amcharts4/themes/animated.js"></script>
+    <script src="assets/charts/tabASSession_chart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

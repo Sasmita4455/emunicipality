@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"/>
+    <link href="../assets/vendor/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.10.1/dist/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/daygrid/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/datatables.min.css"rel="stylesheet" type="text/css"/>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" rel="stylesheet" type="text/css"/> -->
+    <link href="https://fullcalendar.io/css/base.css?3.4.0-1.6.2-3" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <title>CMC</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="h-100">
+          <div class="sidebar-logo ">
+            <a href="#" class="d-flex align-items-center justify-content-between">
+                <img src="../assets/images/cmc-logo.png" alt="">
+                <div class="logo-heading">
+                    <h6>Baliapal Municipality</h6>
+                    <span>E-Municipality</span>
+                </div>
+            </a>
+        </div>
+          <!-- Sidebar Navigation -->
+          <ul class="sidebar-nav">
+            
+          
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#pages"
+                aria-expanded="false"
+                aria-controls="pages"
+              >
+                <i class="fa-regular fa-file-lines pe-2"></i>
+                Hoarding Management System
+              </a>
+              <ul
+                id="pages"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="hoardinginventorylist.html" class="sidebar-link">Hoarding Inventory List </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="HoardingDetailView.html" class="sidebar-link">Hoarding Detail View</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="CampaignManagement .html" class="sidebar-link">Campaign Management</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="Bookings&Reservations.html" class="sidebar-link">Bookings & Reservations</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="ClientManagement .html" class="sidebar-link"> Client Management </a>
+                </li>
+                
+
+              </ul>
+          
+        </div>
+      </aside>
+      <!-- Main Component -->
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <!-- Button for sidebar toggle -->
+          <button class="btn sidebarBtn" type="button" data-bs-theme="dark">
+            <span class="fa-solid fa-bars"></span>
+          </button>
+          <h4 class="page-title">Dashboard</h4>
+          <ul class="riteside">
+            <li>
+              <select name="" id="">
+                <option value="">--Select Role--</option>
+                <option value="">Admin</option>
+                <option value="">User</option>
+              </select>
+            </li>
+            <li>
+              <i class="fa fa-bell"></i>
+            </li>
+            <li class="dropdown">
+              <img src="/assets/img/user1.png" alt="" />
+              <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                <p>Mr. Sujan</p>
+                <span>Admin</span>
+              </div>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class=" Reservations">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="cal col-md-12 p-3">
+                      <div class="card">
+                        <div class="card-header">
+                            <h5>Booking History and Payment Status</h5>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>SI No</th>
+                                        <th>Client Name</th>
+                                        <th>Campaign Details</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Rajesh</td>
+                                        <td>Summer Sale Campaign</td>
+                                        <td>2024-10-10</td>
+                                        <td>2024-10-20</td>
+                                        <td>
+                                            <button class="btn btn-success">Approve Reservation</button>
+                                            <button class="btn btn-danger">Cancel Booking</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Ramesh</td>
+                                        <td>Winter Sale Campaign</td>
+                                        <td>2024-10-10</td>
+                                        <td>2024-10-20</td>
+                                        <td>
+                                            <button class="btn btn-success">Approve Reservation</button>
+                                            <button class="btn btn-danger">Cancel Booking</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/amcharts4/core.js"></script>
+    <script src="../assets/amcharts4/charts.js"></script>
+    <script src="../assets/amcharts4/themes/animated.js"></script>
+    <script src="../assets/charts/tabASSession_chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/locales-all.min.js"></script>
+
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js">
+    </script>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+   
+    <script
+      src="https://kit.fontawesome.com/ae360af17e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+   
+  
+
+    
+  </body>
+</html>

@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/datatables.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>CMC</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+          <div class="h-100">
+            <div class="sidebar-logo ">
+              <a href="#" class="d-flex align-items-center justify-content-between">
+                  <img src="../assets/images/cmc-logo.png" alt="">
+                  <div class="logo-heading">
+                      <h6>Baliapal Municipality</h6>
+                      <span>E-Municipality</span>
+                  </div>
+              </a>
+          </div>
+            <!-- Sidebar Navigation -->
+            <ul class="sidebar-nav">
+              
+            
+              <li class="sidebar-item">
+                <a
+                  href="#"
+                  class="sidebar-link collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#pages"
+                  aria-expanded="false"
+                  aria-controls="pages"
+                >
+                  <i class="fa-regular fa-file-lines pe-2"></i>
+                  Hoarding Management System
+                </a>
+                <ul
+                  id="pages"
+                  class="sidebar-dropdown list-unstyled collapse"
+                  data-bs-parent="#sidebar"
+                >
+                  <li class="sidebar-item">
+                    <a href="hoardinginventorylist.html" class="sidebar-link">Hoarding Inventory List </a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="HoardingDetailView.html" class="sidebar-link">Hoarding Detail View</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="CampaignManagement .html" class="sidebar-link">Campaign Management</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="Bookings&Reservations.html" class="sidebar-link">Bookings & Reservations</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="ClientManagement .html" class="sidebar-link"> Client Management </a>
+                  </li>
+                  
+  
+                </ul>
+            
+          </div>
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <!-- Button for sidebar toggle -->
+                <button class="btn sidebarBtn" type="button" data-bs-theme="dark">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+                <h4 class="page-title">Dashboard</h4>
+                <ul class="riteside">
+                    <li>
+                        <select name="" id="">
+                            <option value="">--Select Role--</option>
+                            <option value="">Admin</option>
+                            <option value="">User</option>
+                        </select>
+                    </li>
+                    <li>
+                        <i class="fa fa-bell"></i>
+                    </li>
+                    <li class="dropdown">
+                        <img src="/assets/img/user1.png" alt="">
+                        <div class="dropdown-toggle" data-bs-toggle="dropdown">
+                            <p>Mr. Sujan</p>
+                            <span>Admin</span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+<div class="container-fluid mt-5">
+    <h2 class="text-center mb-4">Client Profile</h2>
+
+    <!-- Client Basic Info -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">Client Details</h4>
+            <p><strong>Name / Code:</strong> Emily Davis / CL004</p>
+            <p><strong>Contact No:</strong> +91-9876543210</p>
+            <p><strong>Last Booked on:</strong> 2023-10-05</p>
+        </div>
+    </div>
+
+    <!-- Upcoming Campaign Details -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">Upcoming Booking</h4>
+            
+            <!-- Campaign Details Table -->
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Campaign Name</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Budget</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Festive Season Promo</td>
+                        <td>2023-12-01</td>
+                        <td>2023-12-31</td>
+                        <td>Rs. 200,000</td>
+                        <td>
+                            <!-- Campaign Status Dropdown -->
+                            <select class="form-select">
+                                <option value="active">Active</option>
+                                <option value="upcoming" selected>Upcoming</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Hoarding Section -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h4 class="card-title">Hoarding Details</h4>
+
+            <!-- Hoarding Details Table -->
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Hoarding Location</th>
+                        <th>Size</th>
+                        <th>Booked From</th>
+                        <th>Booked To</th>
+                        <th>View Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nalco Square Hoarding</td>
+                        <td>20x40 ft</td>
+                        <td>2023-12-01</td>
+                        <td>2023-12-31</td>
+                        <td>
+                            <!-- Hoarding Detail Button -->
+                            <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#hoardingDetailModal1">
+                                View Details
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Patia Square Hoarding</td>
+                        <td>30x50 ft</td>
+                        <td>2023-12-01</td>
+                        <td>2023-12-31</td>
+                        <td>
+                            <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#hoardingDetailModal2">
+                                View Details
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+          <h4 class="card-title">Payment History & Outstanding Invoices</h4>
+          
+          <!-- payment Table -->
+          <table class="table table-bordered">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">Invoice ID</th>
+                  <th scope="col">Client Name</th>
+                  <th scope="col">Payment Type</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Receipt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>INV001</td>
+                  <td>John Doe</td>
+                  <td>Credit card</td>
+                  <td>Rs 500</td>
+                  <td><span class="badge bg-success">Paid</span></td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" >
+                      Download Receipt
+                  </button>
+                   
+                  </td>
+                </tr>
+                <tr>
+                  <td>INV002</td>
+                  <td>Jane Smith</td>
+                  <td>bank transfe</td>
+                  <td>Rs 300</td>
+                  <td><span class="badge bg-warning">Unpaid</span></td>
+                  <td> <button type="button" class="btn btn-info btn-sm" >
+                    Download Receipt
+                </button></td>
+                </tr>
+                <tr>
+                  <td>INV003</td>
+                  <td>Mark Johnson</td>
+                  <td>mobile payment</td>
+                  <td>Rs 450</td>
+                  <td><span class="badge bg-success">Paid</span></td>
+                  <td> 
+                    <button type="button" class="btn btn-info btn-sm" >
+                    Download Receipt
+                </button>
+              </td>
+                </tr>
+                <tr>
+                  <td>INV004</td>
+                  <td>Emily Davis</td>
+                  <td> PayPal</td>
+                  <td>Rs 600</td>
+                  <td><span class="badge bg-warning">Unpaid</span></td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" >
+                      Download Receipt
+                  </button>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+</div>
+
+<!-- Modal for Hoarding Detail View (Example for Hoarding 1) -->
+<div class="modal fade" id="hoardingDetailModal1" tabindex="-1" aria-labelledby="hoardingDetailLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hoardingDetailLabel1">Nalco Square Hoarding Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Location:</strong> Nalco Square, Bhubaneswar</p>
+        <p><strong>Size:</strong> 20x40 ft</p>
+        <p><strong>Price:</strong> Rs. 5000/week</p>
+        <p><strong>Maintenance Status:</strong> Last maintenance done on 2023-09-15</p>
+        <p><strong>Next Maintenance Due:</strong> 2024-03-15</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Hoarding Detail View (Example for Hoarding 2) -->
+<div class="modal fade" id="hoardingDetailModal2" tabindex="-1" aria-labelledby="hoardingDetailLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hoardingDetailLabel2">Patia Square Hoarding Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Location:</strong> Patia Square, Bhubaneswar</p>
+        <p><strong>Size:</strong> 30x50 ft</p>
+        <p><strong>Price:</strong> Rs. 7000/week</p>
+        <p><strong>Maintenance Status:</strong> Last maintenance done on 2023-08-10</p>
+        <p><strong>Next Maintenance Due:</strong> 2024-02-10</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap-5.0.2/js/bootstrap.bundle.js"></script>
+    <script src="../assets/amcharts4/core.js"></script>
+    <script src="../assets/amcharts4/charts.js"></script>
+    <script src="../assets/amcharts4/themes/animated.js"></script>
+    <script src="../assets/charts/tabASSession_chart.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
